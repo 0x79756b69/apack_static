@@ -6,7 +6,7 @@
   - http://y-u22.sakura.ne.jp/serviceA
   - http://y-u22.sakura.ne.jp/serviceB
   - で（現状は）ホスティングしてます。
-  - リンク先の`秘密のトークン`欄は`u22_winning`としてください。
+  - リンク先の`ひみつのトークン`欄は`u22_winning`としてください。
 - [/doc](./doc)には、このプロジェクトのAPack関連のファイルが入っています。
 
 
