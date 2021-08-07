@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>分権型メッセージング</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="setting-tab" data-bs-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false">Setting</a>
+    </li>
+</ul>
+<div class="tab-content" id="MainTab">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <!--    アプリケーション     -->
+        
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+    <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+    <!--    設定    -->
+        <h2>接続設定</h2>
+        <form>
+            <div class="form-group">
+                <label for="server">利用するサーバー</label>
+                <input type="text" class="form-control" id="server">
+                <label for="token">取得した認可トークン</label>
+                <input type="text" class="form-control" id="token">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="set_connection()">セット</button>
+        </form>
+
+        <div class="row" id="connections">
+
+        </div>
+
+    </div>
+</div>
+<div id="data_saver"></div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
