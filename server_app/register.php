@@ -7,7 +7,7 @@ if (isset($_POST["username"]) && isset($_POST["token"])) {
         $password = "xxx";
 
         $token = random(25);
-        $address = "897dc182a5184d1edb259e560144927b38abe9e6c04bea46eab29786cddfd7b";
+        $address = "897dc182a5184d1edb259e560144927b38abe9e6c04bea46eab29786cddfd7b2";
         $name = $_POST["username"];
         $data = '{
             "params":

@@ -10,9 +10,9 @@
     <li class="nav-item" role="presentation">
         <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
     </li>
-<!--    <li class="nav-item" role="presentation">-->
-<!--        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>-->
-<!--    </li>-->
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
     <li class="nav-item" role="presentation">
         <a class="nav-link" id="setting-tab" data-bs-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false">Setting</a>
     </li>
@@ -21,21 +21,24 @@
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
     <!--    アプリケーション     -->
         <div class="m-3">
-        <div class="bg-dark p-3" id="message_page">
-            <div class="card">
-                <div class="card-body">
-                    This is some text within a card body.
-                </div>
-            </div>
-        </div>
+        <div class="bg-dark p-3" id="message_page"></div>
             <div class="input-group mb-3 m-2">
+                <input type="text" class="form-control" id="to" placeholder="To">
                 <input type="text" class="form-control"  id="message" placeholder="Message here">
                 <button class="btn btn-outline-secondary" type="button" onclick="message_submit()">送信</button>
                 <button class="btn btn-outline-secondary" type="button">リロード</button>
             </div>
     </div>
     </div>
-<!--    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>-->
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <h2>Profile</h2>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="あなたのユーザ名" id="user_name">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="set_username()">セット</button>
+            </div>
+        </div>
+    </div>
     <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
     <!--    設定    -->
         <h2>接続設定</h2>
@@ -57,6 +60,9 @@
 </div>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jsframe.js"></script>
+<script src="account.js"></script>
+<script src="api.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
