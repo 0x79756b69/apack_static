@@ -109,6 +109,7 @@ async function message_fetch() {
 }
 function fetch_display() {
     let $m_out = $('#message_page');
+    $m_out.empty()
     let displays = [];
     let messages_meta = JSON.parse(localStorage.getItem("messages"));
     let s_failed = JSON.parse(localStorage.getItem("failed_log"));
