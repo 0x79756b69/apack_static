@@ -24,6 +24,7 @@ function notify(str) {
     const jsFrame = new JSFrame();
     jsFrame.showToast({
         html: str,
+        duration: 3000
     });
 }
 
