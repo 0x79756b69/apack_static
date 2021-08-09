@@ -1,19 +1,22 @@
 ## Distrim
 このアプリは、APackを利用したアプリケーションのサンプルです。
 
-- [/client_app](./client_app)には、クライアント・アプリケーションが入っています。
-- [/server_app](./server_app)には、サーバーサイド・アプリケーションが入ってます。これは
-  - https://y-u22.sakura.ne.jp/serviceA
-  - https://y-u22.sakura.ne.jp/serviceB
-  - で（現状は）ホスティングしてます。
+- [/client_app](./client_app)には、クライアント用のソフトが入っています。
+- [/server_app](./server_app)には、ビジネスロジック用のソフトが入ってます。これは
+  - ビジロジ:https://y-u22.sakura.ne.jp/serviceA, APack:153.122.122.116
+  - ビジロジ:https://y-u22.sakura.ne.jp/serviceB, APack:153.122.73.177
+  - でホスティングしてます。
   - リンク先の`ひみつのトークン`欄は`u22_winning`としてください。
-- [/doc](./doc)には、このプロジェクトのAPack関連のファイルが入っています。
+- [/doc](./doc)には、このプロジェクトのAPackファイル等が入っています。
 
 
 ## How to use
 上記URLにて登録後、[Github Pages](https://0x79756b69.github.io/apack_static/client_app)
-にて受け取ったトークンとサーバーのアドレスを入力することで、利用できます。
+でトークンとサーバーのアドレスを入力することで、利用できます。
 
 ぜひ試してみてね☆
+
+## Execution movie
+https://youtu.be/sCAl74AoCTE
 
 <!-- リンク切れに注意。  -->
