@@ -22,7 +22,7 @@ if (isset($_POST["username"]) && isset($_POST["token"])) {
         $json_params = '';
         try {
             $db = new PDO($dsn, $user, $password);
-            $sql = 'INSERT INTO apack_token (token_id, address, data, expires_in) VALUES (:token,:address,:d, :t)';
+            $sql = 'INSERT INTO apack_token (token_id, address, val_data, expires_in) VALUES (:token,:address,:d, :t)';
             $prepare = $db->prepare($sql);
             $prepare->bindValue(':token',$token, PDO::PARAM_STR);
             $prepare->bindValue(':address',$address, PDO::PARAM_STR);
